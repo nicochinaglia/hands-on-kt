@@ -1,0 +1,1 @@
+The config will have {{ .Values.config.replicas | quote }} replicas and a timeout of {{ .Values.config.timeout | quote }} seconds.

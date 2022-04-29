@@ -168,14 +168,14 @@ helm package \
 ```bash
 helm repo index \
   releases/ \
-  --url https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPOSITORY}/main/releases
+  --url https://raw.githubusercontent.com/${GITHUB_USER?}/${GITHUB_REPOSITORY?}/main/releases
 ```
 
 ## Usage Example
 
 ```bash
 helm repo add \
-  mylocalrepo https://raw.githubusercontent.com/${GITHUB_USER}/${GITHUB_REPOSITORY}/main/releases
+  mylocalrepo https://raw.githubusercontent.com/${GITHUB_USER?}/${GITHUB_REPOSITORY?}/main/releases
 
 helm repo update mylocalrepo
 helm search repo mylocalrepo
