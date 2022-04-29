@@ -144,6 +144,9 @@ helm upgrade \
   --values ${HOME}/trash/values-extra.yaml
 
 kubectl get configmap my-config-map -o yaml
+
+# Unistall Helm Release
+helm uninstall mychart-example
 ```
 
 ## Packaging
